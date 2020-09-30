@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/lectdrawer"
+    tools:context="in.autodice.classmanagementsystem.StudentLectures">
+
+
+    <LinearLayout android:layout_height="match_parent" android:layout_width="match_parent" android:orientation="vertical">
+
+
+    <android.support.v4.widget.SwipeRefreshLayout android:layout_height="wrap_content"
+        android:id="@+id/mylectswipe" android:layout_width="match_parent">
+
+    <ListView android:layout_height="wrap_content" android:id="@+id/mylectlist"
+        android:layout_width="match_parent"> </ListView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>
+
+    <android.support.design.widget.NavigationView
+        android:layout_height="match_parent"
+        android:id="@+id/lectnavigationview" android:layout_width="match_parent"
+        app:headerLayout="@layout/drawer_header" android:layout_gravity="start"
+        app:menu="@menu/student_navi_menu">
+    </android.support.design.widget.NavigationView>
+
+
+</android.support.v4.widget.DrawerLayout>

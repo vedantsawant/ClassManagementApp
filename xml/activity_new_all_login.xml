@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:background="#5fb0c9"
+    android:layout_width="match_parent"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="fill_parent"
+        android:textStyle="bold" android:textSize="26sp" android:textColor="#fff"
+        android:text="Account Login" android:gravity="center_horizontal"
+        android:layout_marginTop="22dp" android:layout_marginBottom="16dp"
+        android:id="@+id/login_title"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_height="wrap_content" android:background="#fff"
+        android:orientation="vertical" android:layout_width="fill_parent"
+        android:layout_marginTop="100dp" android:padding="20dp" android:elevation="4dp"
+        android:layout_marginRight="30dp" android:layout_marginLeft="30dp"
+        android:layout_below="@+id/login_title">
+
+
+        <LinearLayout android:layout_height="wrap_content"
+            android:orientation="vertical" android:layout_width="fill_parent"
+            android:paddingTop="30dp">
+
+
+            <android.support.design.widget.TextInputLayout android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:layout_marginTop="65dp"
+                android:focusableInTouchMode="true" android:focusable="true">
+
+            <EditText android:layout_height="wrap_content" android:layout_width="fill_parent"
+                android:inputType="textEmailAddress" android:hint="Email" android:singleLine="true"
+                android:drawableTint="#FF4081"
+                android:id="@+id/email"
+                android:drawableLeft="@drawable/ic_teacher"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:layout_marginTop="20dp"
+                android:focusableInTouchMode="true" android:focusable="true">
+
+            <EditText android:layout_height="wrap_content" android:layout_width="fill_parent"
+                android:layout_marginTop="16dp"
+                android:inputType="textEmailAddress" android:hint="Class ID" android:singleLine="true"
+                android:drawableTint="#FF4081"
+                android:id="@+id/etclassid"
+                android:drawableLeft="@drawable/ic_batchatt"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:layout_marginTop="20dp"
+                android:focusableInTouchMode="true" android:focusable="true">
+
+            <EditText android:layout_height="wrap_content"
+                android:layout_width="fill_parent" android:layout_marginTop="16dp"
+                android:inputType="textPassword" android:hint=" Password" android:singleLine="true"
+                android:id="@+id/password"
+                android:drawableTint="#FF4081" android:drawableLeft="@drawable/password"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button android:layout_height="wrap_content" android:background="@color/colorPrimaryDark"
+                android:layout_width="fill_parent" android:textSize="18sp" android:textColor="#fff"
+                android:text="Sign in" android:textAllCaps="false" android:layout_margin="22dp"
+                android:id="@+id/submit"/>
+
+        </LinearLayout>
+
+            <ImageView android:layout_height="100dp"
+                android:src="@drawable/adminloginimg"
+                android:background="@drawable/bg_purple"
+                android:padding="15dp"
+                android:layout_width="100dp"
+                android:id="@+id/user_profile_photo" android:elevation="4dp"
+                android:layout_centerHorizontal="true" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Welcome User"
+        android:textAlignment="gravity"
+        android:background="@drawable/blue_header"
+        android:id="@+id/headertv"
+        android:textColor="#fff"
+        android:textSize="22sp"
+        android:gravity="bottom" />
+
+</LinearLayout>

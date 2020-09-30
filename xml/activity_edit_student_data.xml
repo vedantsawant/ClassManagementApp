@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="in.autodice.classmanagementsystem.EditStudentData">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Student"
+        android:layout_gravity="center"
+        android:textSize="22sp"
+        android:textColor="@color/skyblue"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etname"
+        android:hint="Enter Name"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittext_bg"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etcontact"
+        android:inputType="phone"
+        android:layout_marginTop="15dp"
+        android:hint="Enter Mobile No."
+        android:background="@drawable/edittext_bg"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etaddress"
+        android:layout_marginTop="15dp"
+        android:hint="Enter Address"
+        android:inputType="textMultiLine"
+        android:lines="3"
+        android:background="@drawable/edittext_bg"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etemail"
+        android:layout_marginTop="15dp"
+        android:hint="Enter Email ID"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/edittext_bg"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etcontactparent"
+        android:layout_marginTop="15dp"
+        android:inputType="phone"
+        android:hint="Enter Parent Mobile No."
+        android:background="@drawable/edittext_bg"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:id="@+id/tv1"
+                android:text="Select Batch"/>
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/spinner1"></Spinner>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:id="@+id/tv2"
+                android:text="Select Standard"/>
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/spinner"></Spinner>
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:id="@+id/btsubmit"
+            android:layout_gravity="center"
+            android:background="@drawable/buttonstyle"
+            android:textColor="#ffff"
+            android:text="SUBMIT"/>
+    </LinearLayout>
+
+
+</ScrollView>

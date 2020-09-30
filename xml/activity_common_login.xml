@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    tools:context="in.autodice.classmanagementsystem.CommonLogin">
+
+    <ImageView android:layout_height="100dp" android:layout_width="100dp"
+        android:src="@drawable/adminloginimg"
+        android:layout_marginTop="30dp" android:layout_gravity="center"/>
+
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="wrap_content" android:layout_marginTop="20dp"
+        android:layout_gravity="center" android:textSize="25dp" android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark" android:text="LOGIN"/>
+
+
+    <android.support.design.widget.TextInputLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:layout_marginTop="30dp"
+        android:focusableInTouchMode="true"
+        android:focusable="true">
+
+        <EditText android:background="@drawable/etstyle"
+            android:layout_height="wrap_content" android:layout_width="match_parent"
+            android:layout_marginTop="30dp" android:ems="10"
+            android:drawableLeft="@drawable/ic_teacher" android:id="@+id/email"
+            android:layout_marginLeft="20dp" android:hint=" Email"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:layout_marginTop="30dp"
+        android:focusableInTouchMode="true" android:focusable="true">
+
+        <EditText android:background="@drawable/etstyle"
+            android:layout_height="wrap_content" android:layout_width="match_parent"
+            android:layout_marginTop="50dp"
+            android:drawableLeft="@drawable/ic_batchatt"
+            android:id="@+id/etclassid"
+            android:layout_marginLeft="20dp" android:hint=" Class ID"
+            android:inputType="text"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:layout_marginTop="30dp"
+        android:focusableInTouchMode="true" android:focusable="true"
+        app:passwordToggleEnabled="true">
+
+        <EditText android:background="@drawable/etstyle"
+            android:layout_height="wrap_content" android:layout_width="match_parent"
+            android:layout_marginTop="50dp" android:ems="10" android:drawableLeft="@drawable/password"
+            android:id="@+id/password" android:layout_marginLeft="20dp" android:hint=" Password"
+            android:inputType="textPassword"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <Button android:background="@drawable/buttonstyle"
+        android:layout_height="wrap_content" android:layout_width="170dp"
+        android:layout_marginTop="40dp" android:layout_gravity="center_horizontal"
+        android:textColor="#fff" android:text="LOG IN" android:id="@+id/submit"
+        android:drawableRight="@drawable/login"/>
+
+
+</LinearLayout>

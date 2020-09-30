@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context="in.autodice.classmanagementsystem.StudentDoubt">
+
+    <EditText android:layout_height="wrap_content" android:layout_width="match_parent"
+        android:hint="Enter Your Email Id" android:id="@+id/email" android:layout_marginTop="20dp"
+        android:background="@drawable/etstyle"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:id="@+id/tv2"
+            android:text="Select Subject"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner2"></Spinner>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:id="@+id/tv3"
+            android:text="Select Teacher"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner3"></Spinner>
+
+    </LinearLayout>
+
+
+    <EditText android:layout_height="wrap_content" android:layout_width="match_parent"
+        android:hint="Doubt" android:id="@+id/doubt" android:layout_marginTop="20dp"
+        android:lines="4"
+        android:background="@drawable/etstyle"/>
+
+    <Button android:layout_height="wrap_content" android:padding="10dp"
+        android:layout_width="wrap_content" android:id="@+id/submit" android:layout_marginTop="20dp"
+        android:background="@drawable/buttonstyle" android:text="SUBMIT YOUR DOUBT"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#fff"/>
+
+
+
+</LinearLayout>

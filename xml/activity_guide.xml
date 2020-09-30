@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="in.autodice.classmanagementsystem.Guide">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="For Admin(Class Owner)"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="1)Owner should first sign up and login to your account then your class will get a unique class Id
+            \n2)Owner Should create accounts for staffs by using their email id and set a password
+            \n3)Share the password and class id to the respective staff which admin had set while creating their account
+            \n"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="For Staff"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="1)Get Class ID and Password from admin and then login to your account using Email id,Class Id and Password
+            \n2)Add Subjects and Batches of your class by clicking on the '+' button located at bottom right corner
+            \n3)Add Subjects to the respective batches
+            \n4)After that create accounts for students and teachers
+            \n5)Now you can schedule lectures,schedule tests and manage data of students and teachers
+            \n6)Staff can send notifications to students of a particular batch and also to a particular teacher
+            \n7)If a student has left the class then you can mark student as inactive and then you can also see there data in past student data
+            \n8)If a teacher teaches multiple subjects then that teacher will have different accounts for different subjects\n"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:text="For Teachers"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="1)Get Class ID and Password from staff and then login to your account using Email id,Class Id and Password
+            \n2)Teachers will get their lecture schedule for their respective subjects
+            \n3)Teachers can get doubts of students and teachers can reply to students by sending email using Gmail
+            \n"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:text="For Students"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="1)Get Class ID and Password from staff and then login to your account using Email id,Class Id and Password
+            \n2)Students will get their lecture schedule and test schedule for their respective subjects
+            \n3)Students can ask doubts of teachers and students will get reply from teacher via email
+            \n"/>
+
+
+        </LinearLayout>
+
+</ScrollView>

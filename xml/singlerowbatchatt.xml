@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+<TableRow>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.8"
+        android:id="@+id/tvstdname"
+        android:background="@drawable/bg_table"
+        android:padding="5dp"
+        android:text="Name"
+        android:textColor="#000"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:id="@+id/tvbtstatus"
+        android:text="Present"
+        android:layout_weight="0.2"
+        android:background="@drawable/bg_table"
+        android:padding="5dp"
+        android:textColor="@color/deep_purple"
+        android:textStyle="bold"
+        android:textSize="18sp"/>
+</TableRow>
+
+</TableLayout>

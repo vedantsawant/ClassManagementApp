@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+<TableRow>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.33"
+        android:id="@+id/tvdate"
+        android:textSize="18sp"
+        android:padding="5dp"
+        android:textColor="#000"
+        android:background="@drawable/bg_table"
+        android:text="Date"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.33"
+        android:id="@+id/tvsubname"
+        android:textSize="18sp"
+        android:padding="5dp"
+        android:textColor="#000"
+        android:background="@drawable/bg_table"
+        android:text="Subject"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.33"
+        android:id="@+id/tvstatus"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/deep_purple"
+        android:padding="5dp"
+        android:background="@drawable/bg_table"
+        android:text="Present"/>
+</TableRow>
+
+</TableLayout>
